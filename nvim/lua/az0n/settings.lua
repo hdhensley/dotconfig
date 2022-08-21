@@ -4,6 +4,7 @@ vim.opt.mouse='v'                      -- middle-click paste with mouse
 vim.opt.hlsearch = true                -- highlight search results
 vim.opt.autoindent = true              -- indent a new line the same amount as the line just typed
 vim.opt.number = true                  -- add line numbers
+vim.opt.relativenumber = true          -- add relative line numbers
 vim.opt.wildmode='longest,list'        -- get bash-like tab completions
 vim.opt.cc='80'                        -- set an 80 column border for good coding style
 --filetype plugin indent on   -- allows auto-indenting depending on file type

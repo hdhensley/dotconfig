@@ -51,11 +51,20 @@ return require('packer').startup(function(use)
         'AckslD/nvim-whichkey-setup.lua',
         requires = {'liuchengxu/vim-which-key'},
     }
-
     use {'neoclide/coc.nvim', branch = 'release'}
 
     use({
         "iamcco/markdown-preview.nvim",
         run = function() vim.fn["mkdp#util#install"]() end,
     })
+
+    use {'preservim/tagbar'}
+
+    use {'glepnir/dashboard-nvim'}   
+    
+    use {'tpope/vim-commentary'}
+
+    use {'vim-airline/vim-airline'}
+
+    use {'terryma/vim-multiple-cursors'}
 end)

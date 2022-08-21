@@ -3,7 +3,7 @@ require('az0n.settings')
 require('az0n.lualine')
 require('az0n.treesitter')
 require('az0n.barbar')
-require("nvim-tree").setup()
+require('az0n.nvim-tree')
 
 vim.cmd([[set mouse+=a]])
 -- Keybinds

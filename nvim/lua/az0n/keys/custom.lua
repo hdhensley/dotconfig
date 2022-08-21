@@ -50,6 +50,33 @@ map('n', '<Space>bw', '<Cmd>BufferOrderByWindowNumber<CR>', opts)
 -- :BarbarDisable - very bad command, should never be used
 
 -- NvimTree
-map('n', '<C-n>', ':NvimTreeToggle<CR>', opts)            -- open/close
+map('n', '<leader>e', ':NvimTreeToggle<CR>', opts)            -- open/close
 map('n', '<leader>f', ':NvimTreeRefresh<CR>', opts)       -- refresh
 map('n', '<leader>n', ':NvimTreeFindFile<CR>', opts)      -- search file
+
+-- Tagbar
+map('n', '<F8>', ':TagbarToggle<CR>', opts)
+
+map('n', '+', '<C-a>', opts)
+map('n', '-', '<C-x>', opts)
+
+map('n', '<C-a>', 'gg<S-v>G', opts)
+
+map('n', 'te', ':tabedit<Return>', opts)
+-- Split Window
+map('n', 'ss', ':split<Return><C-w>w', opts)
+map('n', 'sv', ':vsplit<Return><C-w>w', opts)
+-- Move window
+map('', 's<left>', '<C-w>h', opts)
+map('', 's<up>', '<C-w>k', opts)
+map('', 's<down>', '<C-w>j', opts)
+map('', 's<right', '<C-w>l', opts)
+map('', 'sh', '<C-w>h', opts)
+map('', 'sk', '<C-w>k', opts)
+map('', 'sj', '<C-w>j', opts)
+map('', 'sl', '<C-w>l', opts)
+-- Resize window
+map('n', '<C-w><left>', '<C-w><', opts)
+map('n', '<C-w><right>', '<C-w>>', opts)
+map('n', '<C-w><up>', '<C-w>+', opts)
+map('n', '<C-w><down>', '<C-w>-', opts)
